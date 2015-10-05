@@ -1,8 +1,9 @@
 import math
+from constants import *
+from utils import *
 #from ...lib.helpers.unitConversion import *
 
-SPEED_OF_LIGHT = 299792458  # m / s
-PLANCKS_CONSTANT = 6.626 * pow(10, -34)  # joules per second
+
 
 def magnitude_from_brightness(brightness):
 
@@ -58,7 +59,3 @@ def photon_energy_from_wavelength(wavelength):
 
 def wavelength_from_joules(joules):
     return (PLANCKS_CONSTANT * SPEED_OF_LIGHT) / joules
-
-
-def meters_to_nanometers(meters):
-    return math.pow(10, 9) * meters
